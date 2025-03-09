@@ -7,6 +7,8 @@ WORKDIR /webapp
 ENV PIP_NO_CACHE_DIR=1
 
 RUN pip install -r requirements.txt
+RUN pip install flask
+
 
 COPY webapp/* /webapp
 
